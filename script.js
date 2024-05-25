@@ -16,7 +16,7 @@ const welcomeMessages = [
   welcomeMessages.forEach(({ text, delay }) => {
     setTimeout(() => {
       welcomeElement.textContent = text;
-      if (text !== '• Hello') {
+      if (text !== 'Hello') {
         welcomeElement.style.opacity = '1';
       }
     }, delay);

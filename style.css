@@ -20,16 +20,7 @@ body {
   animation: fadeIn 1s forwards;
 }
 
-.ogart {
-  font-size: 100px;
-  text-align: center;
-  font-family: system-ui;
-  color: white;
-  font-weight: 400;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
+/* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -43,11 +34,19 @@ body {
   animation: fadeOut 1s forwards;
 }
 
+/* Fade-out animation */
 @keyframes fadeOut {
   from {
     opacity: 1;
   }
   to {
     opacity: 0;
+  }
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 50px;
   }
 }
